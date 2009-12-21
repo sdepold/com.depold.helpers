@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MapBuilder {
 	@SuppressWarnings("unchecked")
-	public static Map build(Object[] args) throws Exception {
+	public static Map build(Object... args) throws Exception {
 		Map result = new HashMap();
 		
 		if(args.length % 2 != 0)

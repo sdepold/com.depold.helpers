@@ -3,11 +3,11 @@
 This helper offers a "simple" way to create HashMaps in Java.
 To do so, just use the following syntax:
 
-	Map map = MapBuilder.build(new Object[] {
+	Map map = MapBuilder.build(
 		"key1", 123,
 		"key2", 345,
 		"key3", 456
-	});
+	);
 
 And here the "normal" Java code:
 
