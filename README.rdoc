@@ -1,0 +1,12 @@
+= com.depold.helpers.MapBuilder
+
+This helper offers a "simple" way to create HashMaps in Java.
+To do so, just use the following syntax:
+
+	Map map = MapBuilder.build(new Object[] {
+		"key1", 123,
+		"key2", 345,
+		"key3", 456
+	});
+	
+It's important, that the passed array has an even length. Otherwise you will get an exception.
