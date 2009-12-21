@@ -11,9 +11,17 @@ To do so, just use the following syntax:
 
 And here the "normal" Java code:
 
-	Map map = HashMap<String, Integer>();
+	Map map = new HashMap<String, Integer>();
 	map.put("key1", 123);
 	map.put("key2", 345);
 	map.put("key3", 456);
+
+And a "normal" version of an inline definition:
+
+	new HashMap<String, Integer>(){{
+		put("key1", 123);
+		put("key2", 345);
+		put("key3", 456);
+	}};
 	
 It's important, that the passed array has an even length. Otherwise you will get an exception.
